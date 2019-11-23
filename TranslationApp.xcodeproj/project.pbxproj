@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1667A5762389F1A600BAC3F3 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 1667A5752389F1A500BAC3F3 /* GoogleService-Info (1).plist */; };
 		16FFB01D2387B3D2000281CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFB01C2387B3D2000281CA /* AppDelegate.swift */; };
 		16FFB01F2387B3D2000281CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFB01E2387B3D2000281CA /* SceneDelegate.swift */; };
 		16FFB0212387B3D2000281CA /* MySongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFB0202387B3D2000281CA /* MySongs.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1667A5752389F1A500BAC3F3 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		16FFB0192387B3D2000281CA /* TranslationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FFB01C2387B3D2000281CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FFB01E2387B3D2000281CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				16FFB0252387B3D3000281CA /* Assets.xcassets */,
 				16FFB0272387B3D3000281CA /* LaunchScreen.storyboard */,
 				16FFB02A2387B3D3000281CA /* Info.plist */,
+				1667A5752389F1A500BAC3F3 /* GoogleService-Info (1).plist */,
 			);
 			path = TranslationApp;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				16FFB0292387B3D3000281CA /* LaunchScreen.storyboard in Resources */,
 				16FFB0262387B3D3000281CA /* Assets.xcassets in Resources */,
 				16FFB0242387B3D2000281CA /* Main.storyboard in Resources */,
+				1667A5762389F1A600BAC3F3 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

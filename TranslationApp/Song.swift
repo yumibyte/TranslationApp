@@ -9,6 +9,6 @@
 import Foundation
 
 class Song {
-    var title: String = ""
+    var name: String = ""
     var singer: String = ""
 }

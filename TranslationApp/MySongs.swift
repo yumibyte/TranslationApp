@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import Firebase
+import Firebase
 
 class ViewController: UITableViewController {
     
@@ -18,13 +18,17 @@ class ViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customSongCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        
+        let song = songArray[indexPath.row]
+        cell.textLabel?.text = song.name
+        
         
         
         return cell
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return songArray?.count ?? 1
+        return songArray.count ?? 1
     }
 
 }
