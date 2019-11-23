@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1667A5762389F1A600BAC3F3 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 1667A5752389F1A500BAC3F3 /* GoogleService-Info (1).plist */; };
 		16FFB01D2387B3D2000281CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFB01C2387B3D2000281CA /* AppDelegate.swift */; };
 		16FFB01F2387B3D2000281CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFB01E2387B3D2000281CA /* SceneDelegate.swift */; };
-		16FFB0212387B3D2000281CA /* MySongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFB0202387B3D2000281CA /* MySongs.swift */; };
+		16FFB0212387B3D2000281CA /* MySongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FFB0202387B3D2000281CA /* MySongsViewController.swift */; };
 		16FFB0242387B3D2000281CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FFB0222387B3D2000281CA /* Main.storyboard */; };
 		16FFB0262387B3D3000281CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FFB0252387B3D3000281CA /* Assets.xcassets */; };
 		16FFB0292387B3D3000281CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FFB0272387B3D3000281CA /* LaunchScreen.storyboard */; };
@@ -19,11 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1667A5752389F1A500BAC3F3 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		1667A57C2389F83600BAC3F3 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		16FFB0192387B3D2000281CA /* TranslationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FFB01C2387B3D2000281CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FFB01E2387B3D2000281CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16FFB0202387B3D2000281CA /* MySongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySongs.swift; sourceTree = "<group>"; };
+		16FFB0202387B3D2000281CA /* MySongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySongsViewController.swift; sourceTree = "<group>"; };
 		16FFB0232387B3D2000281CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16FFB0252387B3D3000281CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FFB0282387B3D3000281CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +45,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1667A57B2389F82B00BAC3F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16FFB02A2387B3D3000281CA /* Info.plist */,
+				1667A57C2389F83600BAC3F3 /* GoogleService-Info (1).plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1667A57D2389F85400BAC3F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16FFB0222387B3D2000281CA /* Main.storyboard */,
+				16FFB0272387B3D3000281CA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1667A57E2389F87500BAC3F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16FFB01E2387B3D2000281CA /* SceneDelegate.swift */,
+				16FFB01C2387B3D2000281CA /* AppDelegate.swift */,
+				16FFB0202387B3D2000281CA /* MySongsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1667A57F2389F88A00BAC3F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1667A5802389F8DE00BAC3F3 /* CustomSongCell */,
+				16FFB0302387B9AE000281CA /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1667A5802389F8DE00BAC3F3 /* CustomSongCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomSongCell;
+			sourceTree = "<group>";
+		};
 		16FFB0102387B3D2000281CA = {
 			isa = PBXGroup;
 			children = (
@@ -67,15 +110,11 @@
 		16FFB01B2387B3D2000281CA /* TranslationApp */ = {
 			isa = PBXGroup;
 			children = (
-				16FFB01C2387B3D2000281CA /* AppDelegate.swift */,
-				16FFB01E2387B3D2000281CA /* SceneDelegate.swift */,
-				16FFB0202387B3D2000281CA /* MySongs.swift */,
-				16FFB0302387B9AE000281CA /* Song.swift */,
-				16FFB0222387B3D2000281CA /* Main.storyboard */,
+				1667A57F2389F88A00BAC3F3 /* Model */,
+				1667A57E2389F87500BAC3F3 /* Controller */,
+				1667A57D2389F85400BAC3F3 /* View */,
 				16FFB0252387B3D3000281CA /* Assets.xcassets */,
-				16FFB0272387B3D3000281CA /* LaunchScreen.storyboard */,
-				16FFB02A2387B3D3000281CA /* Info.plist */,
-				1667A5752389F1A500BAC3F3 /* GoogleService-Info (1).plist */,
+				1667A57B2389F82B00BAC3F3 /* Supporting Files */,
 			);
 			path = TranslationApp;
 			sourceTree = "<group>";
@@ -160,7 +199,6 @@
 				16FFB0292387B3D3000281CA /* LaunchScreen.storyboard in Resources */,
 				16FFB0262387B3D3000281CA /* Assets.xcassets in Resources */,
 				16FFB0242387B3D2000281CA /* Main.storyboard in Resources */,
-				1667A5762389F1A600BAC3F3 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16FFB0312387B9AE000281CA /* Song.swift in Sources */,
-				16FFB0212387B3D2000281CA /* MySongs.swift in Sources */,
+				16FFB0212387B3D2000281CA /* MySongsViewController.swift in Sources */,
 				16FFB01D2387B3D2000281CA /* AppDelegate.swift in Sources */,
 				16FFB01F2387B3D2000281CA /* SceneDelegate.swift in Sources */,
 			);
