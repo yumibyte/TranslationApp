@@ -76,7 +76,6 @@
 		1667A57F2389F88A00BAC3F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1667A5802389F8DE00BAC3F3 /* CustomSongCell */,
 				16FFB0302387B9AE000281CA /* Song.swift */,
 			);
 			path = Model;
@@ -110,6 +109,7 @@
 		16FFB01B2387B3D2000281CA /* TranslationApp */ = {
 			isa = PBXGroup;
 			children = (
+				1667A5802389F8DE00BAC3F3 /* CustomSongCell */,
 				1667A57F2389F88A00BAC3F3 /* Model */,
 				1667A57E2389F87500BAC3F3 /* Controller */,
 				1667A57D2389F85400BAC3F3 /* View */,
